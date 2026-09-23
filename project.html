@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطار الريادة الدولي </title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="images/img4.jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/img4.jpg" alt="شعار المطار">
+                <h1>مطار الريادة الدولي </h1>
+            </div>
+            <nav>
+                
+                <ul>
+                    <li><a href="#home" >الرئيسية</a></li>
+                    <li><a href="#flights">رحلات الطيران</a></li>
+                    <li><a href="book.html">أحجز رحلتك</a></li>
+                    <li><a href="#services">خدمات المطار</a></li>
+                    <li><a href="about.html">عن المطار</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main" id="home">
+        <div class="main-content">
+            <h1 id="welcomeMessage">جاري التحميل...</h1>
+            <h2>رحلاتك تبدأ معنا</h2>
+            <p>استمتع بتجربة سفر فريدة مع أحدث خدمات الطيران</p>
+            <a href="book.html" class="btn">احجز رحلتك الآن</a>
+        </div>
+    </section>
+
+    <section class="flights" id="flights">
+        <div class="container">
+            <h2 class="section-title">رحلات الطيران</h2>
+            <div class="flight-cards">
+                <div class="flight-card">
+                    <img src="Images/img1.jpg" alt="طائرة">
+                    <div class="flight-info">
+                        <h3>الرحلات الداخلية</h3>
+                        <p>رحلات مريحة وسريعة بين المدن الرئيسية</p>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <img src="Images/img2.jpg" alt="طائرة">
+                    <div class="flight-info">
+                        <h3>الرحلات الدولية</h3>
+                        <p>وجهات عالمية مع أفضل خطوط الطيران</p>
+                    </div>
+                </div>
+                <div class="flight-card">
+                    <img src="Images/img3.jpg" alt="طائرة">
+                    <div class="flight-info">
+                        <h3>الرحلات الموسمية</h3>
+                        <p>عروض خاصة للمواسم والأعياد</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+             
+
+    <section class="services" id="services" >
+        <div class="container">
+            <h2 class="section-title">خدمات المطار</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <i class=" suitcase-rolling"></i>
+                    <h3>خدمات الأمتعة</h3>
+                    <p>نظام متكامل لتتبع وحماية أمتعتك</p>
+                </div>
+                <div class="service-item">
+                    <i class=" utensils"></i>
+                    <h3>المطاعم والمقاهي</h3>
+                    <p>تشكيلة واسعة من المأكولات العالمية</p>
+                </div>
+
+                <div class="service-item">
+                    <i class=" wifi"></i>
+                    <h3>إنترنت مجاني</h3>
+                    <p>اتصال سريع بالإنترنت في جميع أنحاء المطار</p>
+                </div>
+
+                <div class="service-item">
+                    <i class=" taxi"></i>
+                    <h3>مواصلات</h3>
+                    <p>خدمات نقل مريحة من وإلى المطار</p>
+                </div>
+
+                <div class="service-item">
+                    <i class=" wheelchair"></i>
+                    <h3>خدمات ذوي الاحتياجات</h3>
+                    <p>مرافق وخدمات مخصصة لذوي الاحتياجات الخاصة</p>
+                </div>
+
+                <div class="service-item">
+                    <i class=" shopping-bag"></i>
+                    <h3>التسوق</h3>
+                    <p>متاجر متنوعة لشراء الهدايا والتذكارات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="flight-status">
+        <div class="container">
+            <h2 class="section-title">حالة الرحلات</h2>
+            <div class="status-container">
+                <div class="status-tabs">
+                    <button class="tab-btn active" data-tab="arrivals">الرحلات القادمة</button>
+                    <button class="tab-btn" data-tab="departures">الرحلات المغادرة</button>
+                </div>
+                <div class="status-content">
+                    <div class="tab-pane active" id="arrivals">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>الرحلة</th>
+                                    <th>المصدر</th>
+                                    <th>الوقت المتوقع</th>
+                                    <th>البوابة</th>
+                                    <th>السعر</th>
+                                    <th>الحالة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SV 123</td>
+                                    <td>دبي</td>
+                                    <td>14:30</td>
+                                    <td>A5</td>
+                                    <td>600$</td>
+                                    <td class="status-ontime">في الوقت</td>
+                                </tr>
+                                <tr>
+                                    <td>XY 456</td>
+                                    <td>القاهرة</td>
+                                    <td>15:45</td>
+                                    <td>B2</td>
+                                    <td>500$</td>
+                                    <td class="status-delayed">متأخرة</td>
+                                </tr>
+                                <tr>
+                                    <td>QR 789</td>
+                                    <td>الدوحة</td>
+                                    <td>16:20</td>
+                                    <td>A3</td>
+                                    <td>700$</td>
+                                    <td class="status-ontime">في الوقت</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tab-pane" id="departures">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>الرحلة</th>
+                                    <th>الوجهة</th>
+                                    <th>وقت المغادرة</th>
+                                    <th>البوابة</th>
+                                    <th>السعر</th>
+                                    <th>الحالة</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SV 124</td>
+                                    <td>جدة</td>
+                                    <td>17:00</td>
+                                    <td>C1</td>
+                                    <td>330$</td>
+                                    <td class="status-boarding">صعود</td>
+                                </tr>
+                                <tr>
+                                    <td>XY 457</td>
+                                    <td>صنعاء</td>
+                                    <td>18:30</td>
+                                    <td>D4</td>
+                                    <td>150$</td>
+                                    <td class="status-ontime">في الوقت</td>
+                                </tr>
+                                <tr>
+                                    <td>QR 790</td>
+                                    <td>مسقط</td>
+                                    <td>19:15</td>
+                                    <td>B7</td>
+                                    <td>300$</td>
+                                    <td class="status-delayed">متأخرة</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">اتصل بنا</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class=" map-marker-alt"></i>
+                        <h3>العنوان</h3>
+                        <p>عدن-كريتر</p>
+                    </div>
+                    <div class="info-item">
+                        <i class=" phone"></i>
+                        <h3>الهاتف</h3>
+                        <p dir="ltr">+967 776 699 035</p>
+                    </div>
+                    <div class="info-item">
+                        <i class=" envelope"></i>
+                        <h3>البريد الإلكتروني</h3>
+                        <p>info@riyadaairport.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class=" clock"></i>
+                        <h3>ساعات العمل</h3>
+                        <p>24 ساعة - 7 أيام في الأسبوع</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="رقم الهاتف">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="رسالتك" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/img4.jpg" alt="شعار المطار">
+                    <h3>مطار الريادة الدولي</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#flights">رحلات الطيران</a></li>
+                        <li><a href="#services">خدمات المطار</a></li>
+                        <li><a href="about.html">عن المطار</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 >مطار الريادة الدولي. جميع الحقوق محفوظة.</p>
+                <p>تم تطوير الموقع بواسطة المهندس محمدالحميري</p>
+            </div>
+        </div>
+    </footer>
+   
+    <script src="project.js"></script>
+</body>
+</html>

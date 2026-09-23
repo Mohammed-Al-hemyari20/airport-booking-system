@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطار الريادة الدولي </title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="images/img4.jpg">
+</head>
+<body dir="rtl">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/img4.jpg" alt="شعار المطار">
+                <h1>مطار الريادة الدولي </h1>
+            </div>
+            <nav>
+                
+                <ul>
+                    <li><a href="project.html#home" >الرئيسية</a></li>
+                    <li><a href="project.html#flights">رحلات الطيران</a></li>
+                    <li><a href="book.html">أحجز رحلتك</a></li>
+                    <li><a href="project.html#services">خدمات المطار</a></li>
+                    <li><a href="about.html">عن المطار</a></li>
+                    <li><a href="project.html#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+    <section class="booking" id="booking">
+        <div class="container">
+            <h2 class="section-title">نظام حجز الرحلات</h2>
+            
+            <div class="booking-card">
+                <form id="flight-booking-form" class="modern-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>اسم المسافر:</label>
+                            <input type="text" id="passenger-name" placeholder="أدخل الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <label>رقم الرحلة:</label>
+                            <input type="text" id="flight-num" placeholder="مثلاً: SV 123" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>من (مدينة الإقلاع):</label>
+                            <input type="text" id="departure" placeholder="مثلاً: الرياض" required>
+                        </div>
+                        <div class="form-group">
+                            <label>إلى (وجهة الوصول):</label>
+                            <input type="text" id="destination" placeholder="مثلاً: دبي" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">تأكيد الحجز وحفظ البيانات</button>
+                </form>
+            </div>
+        <div class="status-container" style="margin-top: 40px;">
+                <div class="status-tabs">
+                    <div style="flex: 1; padding: 15px; color: white; font-size: 1rem; font-weight: bold; background-color: var(--accent-color); text-align: center;">جدول الحجوزات المؤكدة</div>
+                </div>
+                <div style="padding: 20px; overflow-x: auto; background-color: white;">
+                    <table id="bookings-table">
+                        <thead>
+                            <tr>
+                                <th>اسم المسافر</th>
+                                <th>رقم الرحلة</th>
+                                <th>من</th>
+                                <th>إلى</th>
+                                <th>الحالة</th>
+                                <th>الإجراءات</th>
+                             </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer dir="rtl">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/img4.jpg" alt="شعار المطار">
+                    <h3>مطار الريادة الدولي</h3>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                    <li><a href="project.html#home" >الرئيسية</a></li>
+                    <li><a href="project.html#flights">رحلات الطيران</a></li>
+                    <li><a href="project.html#services">خدمات المطار</a></li>
+                    <li><a href="about.html">عن المطار</a></li>
+                    <li><a href="project.html#contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 >مطار الريادة الدولي. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="admin-check" class="A">
+        <div class="a-box">
+            <h3 style="margin-top: 0;">دخول المسؤول</h3>
+            <p>يرجى إدخال البيانات للمتابعة</p>
+            
+            <input type="text" id="a-user" placeholder="اسم المستخدم" class="a-input">
+            <input type="password" id="a-pass" placeholder="كلمة المرور" class="a-input">
+            
+            <p id="a-error" style="color: red; display: none; font-size: 14px; margin-bottom: 10px;">البيانات خاطئة!</p>
+            
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <button id="a-confirm" class="btn-confirm">تأكيد</button>
+                <button id="a-cancel" class="btn-cancel">تراجع</button>
+            </div>
+        </div>
+    </div>
+    <script src="project.js"></script>
+
+</body>
+</html>
